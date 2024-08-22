@@ -398,3 +398,69 @@ ScrollTrigger.create({
   start: `top top`,
   end: `600% top`,
 });
+
+gsap.fromTo(
+  "#page1>.text-wrap",
+  {
+    y: "100%",
+    opacity: 0,
+  },
+  {
+    y: "0%",
+    opacity: 1,
+    duration: 0.5,
+    scrollTrigger: {
+      trigger: "#page1",
+      scroller: `#main`,
+      start: "top 20%",
+      end: "top 130%",
+      pin: true,
+      scrub: true,
+      stagger: 0.1,
+    },
+  }
+);
+
+gsap.fromTo(
+  "#page2>.text-wrap",
+  {
+    y: "100%",
+    opacity: 0,
+  },
+  {
+    y: "0%",
+    opacity: 1,
+    duration: 0.5,
+    scrollTrigger: {
+      trigger: "#page1",
+      scroller: `#main`,
+      start: "top 20%",
+      end: "top 100%",
+      pin: true,
+      scrub: true,
+      stagger: 0.1,
+    },
+  }
+);
+
+gsap.fromTo(
+  "#page3>.text-wrap",
+  {
+    y: "100%",
+    opacity: 0,
+  },
+  {
+    y: "0%",
+    opacity: 1,
+    duration: 0.5,
+    scrollTrigger: {
+      trigger: "#page1",
+      scroller: `#main`,
+      start: "top 40%",
+      end: "top 100%",
+      pin: true,
+      scrub: true,
+      stagger: 0.1,
+    },
+  }
+);

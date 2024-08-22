@@ -262,6 +262,10 @@ button {
     height: 100vh;
     background: transparent;
     padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
 }
 
 #page2 {
@@ -269,6 +273,10 @@ button {
     height: 100vh;
     background: transparent;
     padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
 }
 
 
@@ -277,12 +285,19 @@ button {
     height: 100vh;
     background: transparent;
     padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+   
 }
 
 
 .text-wrap {
     width: 400px;
     height: 200px;
+    overflow: hidden;
+    position: relative;
 }
 
 .text-wrap h3 {
